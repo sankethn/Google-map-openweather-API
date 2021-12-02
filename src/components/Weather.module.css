@@ -1,0 +1,53 @@
+button {
+  border: 1px solid #46eb34;
+  height: 30px;
+  width: 10rem;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.dateTime {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.city {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #5c5b57;
+}
+
+.current {
+  margin: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.temp {
+  font-size: 2rem;
+  margin: 0 20px;
+}
+
+.forecast {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.forecast li {
+  margin: 0 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
