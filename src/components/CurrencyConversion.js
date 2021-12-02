@@ -11,7 +11,7 @@ const CurrencyConversion = (props) => {
     const fetchCurrencyConversion = async () => {
       if (countryCurrency !== "") {
         const response = await fetch(
-          `https://v6.exchangerate-api.com/v6/274cc74b484107c4afd74066/latest/${countryCurrency}`
+          `https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/${countryCurrency}`
         );
         const responseData = await response.json();
         console.log(responseData);
