@@ -42,7 +42,7 @@ const Weather = (props) => {
     const fetchWeatherData = async () => {
       if (locationCtx.loaded) {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/onecall?lat=${locationCtx.coordinates.lat}&lon=${locationCtx.coordinates.lng}&exclude=minutely,hourly,alerts&units=metric&appid=e25b1ae90ab2cc27ec77818bf149bcff`
+          `https://api.openweathermap.org/data/2.5/onecall?lat=${locationCtx.coordinates.lat}&lon=${locationCtx.coordinates.lng}&exclude=minutely,hourly,alerts&units=metric&appid=YOUR_API_KEY`
         );
 
         const responseData = await response.json();
@@ -62,7 +62,7 @@ const Weather = (props) => {
         });
 
         const cityResponse = await fetch(
-          `https://maps.googleapis.com/maps/api/geocode/json?latlng=${locationCtx.coordinates.lat},${locationCtx.coordinates.lng}&sensor=true&key=AIzaSyAuiJzFETNIsw2V6l_iZygmTXphE8cH9Iw`
+          `https://maps.googleapis.com/maps/api/geocode/json?latlng=${locationCtx.coordinates.lat},${locationCtx.coordinates.lng}&sensor=true&key=YOUR_API_KEY`
         );
 
         const cityResponseData = await cityResponse.json();
