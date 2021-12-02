@@ -18,7 +18,7 @@ function App() {
 
       <div>
         <WrapperMap
-          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyAuiJzFETNIsw2V6l_iZygmTXphE8cH9Iw`}
+          googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=YOUR_API_KEY`}
           loadingElement={<div style={{ height: `100%`, width: "80%" }} />}
           containerElement={<div style={{ height: `300px` }} />}
           mapElement={
